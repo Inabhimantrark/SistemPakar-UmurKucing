@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED4C67"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    tools:context=".WelcomeScreen">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/ic_cat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:padding="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistem Pakar\nDiagnosa Umur Kucing"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Merupakan Deteksi Umur Kucing Berdasarkan Indikasi Model Gigi\nDengan Penerapan Algoritma Forward Chaining."
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:textColor="#7f8c8d"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ED4C67"
+                    android:drawableRight="@drawable/ic_baseline_arrow_forward_24_white"
+                    android:padding="15dp"
+                    android:text="Selanjutnya"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

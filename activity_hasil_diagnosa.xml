@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ED4C67"
+    tools:context=".hasilDiagnosa">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Kembali"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        style="@style/HeaderBar"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_checklist" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Berhasil Melakukan Diagnosa\nSistem Pakar Usia Kucing"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:text="Hasil Diagnosa Usia Kucing Anda"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/hasilUsia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1"
+                    android:padding="10dp"
+                    android:text="Hasil Usia" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:text="Kategori Kucing Anda"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/hasilUsia"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/kategoriUsia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt2"
+                    android:padding="10dp"
+                    android:text="Hasil Usia" />
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:text="Penjelasan"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/kategoriUsia"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/Penjelasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt3"
+                    android:padding="10dp"
+                    android:text="Hasil Diagnosa" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPdf"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bgbutton"
+                    android:drawableRight="@drawable/ic_pdf_resize"
+                    android:padding="15dp"
+                    android:text="Generate PDF"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ED4C67"
+    tools:context=".Tips">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Kembali"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        style="@style/HeaderBar"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_tips" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:text="Tips Merawat Kucing"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            android:background="@color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"
+                        android:text="Tentang Merawat Kucing"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/ket_tips_new"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt2"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"
+                        android:text="Berikut beberapa cara merawat kucing"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt3"
+                        android:padding="10dp"
+                        android:text="1. Wajib membawa kedokter hewan" />
+
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_below="@id/txt4"
+                        android:text="2. Memberikan obat cacing." />
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_below="@id/txt5"
+                        android:text="3. Vaksinasi pada kucing." />
+
+                    <TextView
+                        android:id="@+id/txt7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_below="@id/txt6"
+                        android:text="4. Jika kucing baru adopt harus dipisahkan terlebih dahulu dari kucing yang lain(kucing yang lama)." />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="5. Berikan air minum yang matang. Setiap kucing membutuhkan 50ml per kg dari berat badan." />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="6. Memberikan vitamin pada kucing." />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="7. Memotong kuku kucing minimal 1 minggu sekali." />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="8. Membersihkan pasir kucing setiap hari minimal 2kali seharti." />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/VaksinBtn"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/bgbutton"
+                        android:drawableLeft="@drawable/ic_vaksin_resize"
+                        android:padding="20dp"
+                        android:text="Aturan Vaksin"
+                        android:textColor="@color/white" />
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

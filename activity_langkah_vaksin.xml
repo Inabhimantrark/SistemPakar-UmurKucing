@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ED4C67"
+    tools:context=".LangkahVaksin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Kembali"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        style="@style/HeaderBar"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_vaksin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Vaksin Pada Kucing"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            android:background="@color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"
+                        android:text="Jenis vaksin kucing yang ada di Indonesia "
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Felocell 3 , Felocell 4 dan Rabies."
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt2"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"
+                        android:text="Aturan vaksin pada kucing "
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt3"
+                        android:padding="10dp"
+                        android:text="1. Vaksin pada kucing bisa dimulai pada umur 2 bulan." />
+
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_below="@id/txt4"
+                        android:text="2. Jika vaksin pertama pada umur 2 bulan maka vaksin selanjutnya(kedua) ada pada satu bulan berikutnya." />
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_below="@id/txt5"
+                        android:text="3. Sedangkan vaksin rabies dilakukan pada satu tahun sekali." />
+
+                    <TextView
+                        android:id="@+id/txt7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_below="@id/txt6"
+                        android:text="4. Setiap vaksin pada kucing dilakukan pengulangan pada tiap tahunnya" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"
+                        android:text="Aturan pemberian obat cacing "
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="1. Obat cacing dapat diberikan kepada kucing kitten mulai umur 6-12 minggu dan diberikan setiap 2 minggu sekali." />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="2. Kucing diatas usia 12 minggu diberikan obat cacing setiap 3 bulan sekali." />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

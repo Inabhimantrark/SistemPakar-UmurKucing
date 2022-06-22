@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ED4C67"
+    tools:context=".DiagnosaPakar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Kembali"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        style="@style/HeaderBar"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:src="@drawable/logo_cat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:text="Diagnosa Berdasarkan\nSistem Pakar"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="10dp"
+                        android:text="Pilih Diagnosa Sesuai Kondisi\nKucing Anda"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_mulai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickChecked"
+                        android:text="Gigi Mulai Terlihat"
+                        tools:ignore="OnClick" />
+
+                    <CheckBox
+                        android:id="@+id/cb_gigi_susu_depan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickChecked"
+                        android:text="Tumbuh gigi susu bagian depan (incisivus)"
+                        tools:ignore="OnClick" />
+
+                    <CheckBox
+                        android:id="@+id/cb_gigi_taring"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickChecked"
+                        android:text="Tumbuh gigi taring (caninus)"
+                        tools:ignore="OnClick" />
+
+                    <CheckBox
+                        android:id="@+id/cb_gigi_susu_lengkap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickChecked"
+                        android:text="Gigi Susu Lengkap"
+                        tools:ignore="OnClick" />
+
+                    <CheckBox
+                        android:id="@+id/cb_gigi_permanen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickChecked"
+                        android:text="Tumbuh gigi permanen (incisivus)"
+                        tools:ignore="OnClick" />
+
+                    <CheckBox
+                        android:id="@+id/cb_seluruh_gigi_permanen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickChecked"
+                        android:text="Tumbuh seluruh gigi permanen"
+                        tools:ignore="OnClick" />
+
+                    <CheckBox
+                        android:id="@+id/cb_karang_gigi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickChecked"
+                        android:text="Munculnya karang gigi "
+                        tools:ignore="OnClick" />
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/mulaiDiagnosa"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/bgbutton"
+                        android:drawableLeft="@drawable/ic_diagnosa_resize"
+                        android:padding="20dp"
+                        android:text="Mulai Diagnosa"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

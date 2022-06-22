@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TidakDiketahui">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Kembali"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        style="@style/HeaderBar"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:id="@+id/iv404"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_notfound" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv404"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Data Diagnosa\nBelum diketahui oleh sistem pakar kami"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
